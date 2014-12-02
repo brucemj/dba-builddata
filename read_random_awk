@@ -1,0 +1,5 @@
+
+awk -f random_function.awk -f random_test.awk > d1.txt
+
+load data local infile './d1.txt' into table dba.awk fields terminated by ',' (fn,ln,dob);
+
